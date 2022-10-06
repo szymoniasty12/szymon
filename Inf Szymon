@@ -1,0 +1,47 @@
+string[] listaString = {"1", "2", "3"};
+int[] listaInt = new int[listaString.Length];
+
+            for (int i = 0; i < listaString.Length; i++){
+                    
+                listaInt[i] = int.Parse(listaString[i]);
+                Console.WriteLine(listaInt[i]);
+            }
+
+
+
+
+
+
+
+
+
+
+
+int razem = 0;
+            char[] samo = { 'a', 'e', 'i', 'o', 'u', 'ó', 'ę', 'ą', 'y' };
+
+            Console.WriteLine("Napisz swój poemat:");
+            string zdanie = Console.ReadLine().ToLower();
+
+            for (int i = 0; i < zdanie.Length; i++)
+            {
+                if (samo.Contains(zdanie[i]))
+                {
+                    razem++;
+                }
+            }
+            Console.WriteLine($"liczba samogłosek to =  {razem} ");
+
+
+
+
+
+
+
+string ala = "Ala ma kota";
+            foreach(char el in ala)
+            {
+                Console.Write(el);
+                Console.Write("   ");
+            }
+            Console.ReadKey();
